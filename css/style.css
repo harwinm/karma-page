@@ -1,0 +1,120 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+body {
+    background-color: LightGray;
+    font-family: "Roboto", sans-serif;
+}
+div {
+}
+.content {
+	margin: 0 auto;
+	padding: 0 0.938rem;
+	min-width: 37.5rem;
+	width: 60%;
+}
+
+ol, ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
+.top-navigation{
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+.top-navigation .content{
+	height: 4.375rem;
+}
+.top-navigation .content .logo {
+	height: 4.375rem;
+}
+.top-navigation .content .links {
+	float: right;
+	color: #838994;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
+}
+.top-navigation .content .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+	font-weight: 500;
+	color: #4c5058;
+}
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
+
+.introduction{
+	background-image: url('../img/first-background.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+	overflow-x: auto;
+    overflow-y: auto;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction h1, .introduction h3{
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction .buttons { 
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
+button {
+	width: 9.688 rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
+}
+button:hover{
+	background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
+
+
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/

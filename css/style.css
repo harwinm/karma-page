@@ -9,7 +9,9 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tf
 	border: 0;
 	font-size: 100%;
 }
-
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 
 /* General styles 
 	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
@@ -28,7 +30,7 @@ div {
 }
 
 ol, ul {
-	list-style: none;
+	list-style: outside none none;
 	list-style-type: none;
 }
 
@@ -110,9 +112,58 @@ button:hover{
     border-color: #cf3d0e;
     cursor: pointer;
 }
+.cases {
+    background-color: #fff;
+}
+.cases .content{
+	color: #1d1e21;
+	padding-top: 2rem;
+	text-align: center;
+}
+.cases h2 {
+	font-size: 2.75rem;
+	font-weight: 300;
+	margin: 0 0 3.125rem;
+}
+.cases .devices li {
+	display: inline-block;
+	width: 30%;
+}
+.cases .devices h3{
+	font-size: 1.563rem;
+	font-weight: 400;
+	margin: 2.5rem 0 1.875rem;
+}
+
 /* Footer styles 
 	(all the styles inside the < footer > tag)
 */
+
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social .icons li {
+	border: 1px solid #8A848C;
+	border-radius: 1.25rem;
+	display: inline-block;
+	height: 1rem;
+	margin: 1.25rem 5px;
+	padding: 0.625rem 0;
+	text-align: center;
+	width: 2.5rem;
+}
+.social .twitter {
+	color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
 
 
 /* Responsive styles 
